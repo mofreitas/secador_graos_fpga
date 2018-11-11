@@ -1,1 +1,0 @@
-# secador_graos_fpga
