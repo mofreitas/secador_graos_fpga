@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 1032 384 1208 400)
+	(rect 1064 384 1240 400)
 	(text "INPUT" (rect 15 0 43 10)(font "Arial" (font_size 6)))
 	(text "LER" (rect 146 0 167 12)(font "Arial" ))
 	(pt 0 8)
@@ -70,7 +70,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 1040 336 1216 352)
+	(rect 1064 336 1240 352)
 	(text "INPUT" (rect 15 0 43 10)(font "Arial" (font_size 6)))
 	(text "ESCREVER" (rect 107 0 167 12)(font "Arial" ))
 	(pt 0 8)
@@ -104,7 +104,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 1032 472 1200 488)
+	(rect 1064 472 1232 488)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "enviar[7..0]" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
@@ -217,7 +217,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1032 424 1208 440)
+	(rect 1064 424 1240 440)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "sai[3..0]" (rect 90 0 130 12)(font "Arial" ))
 	(pt 0 8)
@@ -1180,20 +1180,12 @@ applicable agreement for further details.
 	(pt 128 272)
 )
 (connector
-	(pt 1032 392)
-	(pt 624 392)
-)
-(connector
 	(pt 600 272)
 	(pt 640 272)
 )
 (connector
 	(pt 624 288)
 	(pt 640 288)
-)
-(connector
-	(pt 624 392)
-	(pt 624 288)
 )
 (connector
 	(pt 704 280)
@@ -1362,10 +1354,6 @@ applicable agreement for further details.
 	(pt 304 400)
 )
 (connector
-	(pt 592 344)
-	(pt 1040 344)
-)
-(connector
 	(pt 600 72)
 	(pt 600 120)
 )
@@ -1468,6 +1456,18 @@ applicable agreement for further details.
 	(pt 480 712)
 	(bus)
 )
+(connector
+	(pt 592 344)
+	(pt 1064 344)
+)
+(connector
+	(pt 624 288)
+	(pt 624 392)
+)
+(connector
+	(pt 624 392)
+	(pt 1064 392)
+)
 (junction (pt 600 272))
 (junction (pt 368 136))
 (junction (pt 600 120))
@@ -1477,9 +1477,9 @@ applicable agreement for further details.
 (junction (pt 368 496))
 (junction (pt 304 240))
 (junction (pt 304 104))
-(text "SPI" (rect 1200 64 1248 91)(font "Arial" (font_size 18)))
+(text "SPI" (rect 992 72 1040 99)(font "Arial" (font_size 18)))
 (text "PWM" (rect 1920 -8 1991 19)(font "Arial" (font_size 18)))
 (text "TIMER" (rect 416 640 506 667)(font "Arial" (font_size 18)))
-(rectangle (rect 208 56 1256 592)(color 0 0 0)(line_width 2))
+(rectangle (rect 208 56 1032 592)(color 0 0 0)(line_width 2))
 (rectangle (rect 1904 -32 2488 704))
 (rectangle (rect 208 632 496 768))
