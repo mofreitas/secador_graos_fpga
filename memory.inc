@@ -16,6 +16,7 @@
 FUNCTION memory 
 (
 	address[6..0],
+	clken,
 	clock
 )
 

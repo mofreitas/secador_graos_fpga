@@ -3,51 +3,131 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clkFPGA'
-Slack : -0.985
-TNS   : -7.880
+Slack : -6.287
+TNS   : -196.033
 
 Type  : Slow Model Setup 'SCK'
-Slack : -0.959
-TNS   : -7.699
+Slack : -2.765
+TNS   : -22.186
+
+Type  : Slow Model Setup 'clkARDUINO'
+Slack : -2.216
+TNS   : -15.512
+
+Type  : Slow Model Setup 'LER'
+Slack : -0.025
+TNS   : -0.025
+
+Type  : Slow Model Hold 'LER'
+Slack : -1.541
+TNS   : -15.418
 
 Type  : Slow Model Hold 'SCK'
 Slack : 0.391
 TNS   : 0.000
 
 Type  : Slow Model Hold 'clkFPGA'
-Slack : 0.655
+Slack : 0.746
 TNS   : 0.000
+
+Type  : Slow Model Hold 'clkARDUINO'
+Slack : 0.852
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'clkFPGA'
+Slack : -5.562
+TNS   : -85.282
+
+Type  : Slow Model Recovery 'clkARDUINO'
+Slack : -2.313
+TNS   : -16.191
+
+Type  : Slow Model Removal 'clkARDUINO'
+Slack : 2.376
+TNS   : 0.000
+
+Type  : Slow Model Removal 'clkFPGA'
+Slack : 2.577
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clkFPGA'
+Slack : -1.380
+TNS   : -68.380
 
 Type  : Slow Model Minimum Pulse Width 'SCK'
 Slack : -1.380
 TNS   : -20.380
 
-Type  : Slow Model Minimum Pulse Width 'clkFPGA'
+Type  : Slow Model Minimum Pulse Width 'clkARDUINO'
 Slack : -1.380
-TNS   : -9.380
+TNS   : -8.380
 
-Type  : Fast Model Setup 'SCK'
-Slack : -0.192
-TNS   : -1.516
+Type  : Slow Model Minimum Pulse Width 'LER'
+Slack : -1.222
+TNS   : -1.222
 
 Type  : Fast Model Setup 'clkFPGA'
-Slack : -0.003
-TNS   : -0.024
+Slack : -2.495
+TNS   : -62.444
+
+Type  : Fast Model Setup 'SCK'
+Slack : -0.907
+TNS   : -7.143
+
+Type  : Fast Model Setup 'clkARDUINO'
+Slack : -0.533
+TNS   : -3.731
+
+Type  : Fast Model Setup 'LER'
+Slack : 0.267
+TNS   : 0.000
+
+Type  : Fast Model Hold 'LER'
+Slack : -0.377
+TNS   : -2.441
 
 Type  : Fast Model Hold 'SCK'
 Slack : 0.215
 TNS   : 0.000
 
 Type  : Fast Model Hold 'clkFPGA'
-Slack : 0.323
+Slack : 0.342
 TNS   : 0.000
+
+Type  : Fast Model Hold 'clkARDUINO'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'clkFPGA'
+Slack : -2.344
+TNS   : -35.838
+
+Type  : Fast Model Recovery 'clkARDUINO'
+Slack : -0.604
+TNS   : -4.228
+
+Type  : Fast Model Removal 'clkARDUINO'
+Slack : 1.168
+TNS   : 0.000
+
+Type  : Fast Model Removal 'clkFPGA'
+Slack : 1.250
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clkFPGA'
+Slack : -1.380
+TNS   : -68.380
 
 Type  : Fast Model Minimum Pulse Width 'SCK'
 Slack : -1.380
 TNS   : -20.380
 
-Type  : Fast Model Minimum Pulse Width 'clkFPGA'
+Type  : Fast Model Minimum Pulse Width 'clkARDUINO'
 Slack : -1.380
-TNS   : -9.380
+TNS   : -8.380
+
+Type  : Fast Model Minimum Pulse Width 'LER'
+Slack : -1.222
+TNS   : -1.222
 
 ------------------------------------------------------------

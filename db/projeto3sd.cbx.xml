@@ -1,7 +1,15 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="projeto3sd">
+		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|PWM_compare0:inst7|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_0mg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|lpm_counterCONTADOR1:inst22|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_gjk.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|PWM_compare0:inst8|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_0mg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_r4j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|lpm_add_sub0:inst19|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_i4i.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|lpm_add_sub0:inst20|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_i4i.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|memory:inst21|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_8691.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|memory:inst21|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ai81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|PWM_counter0:inst6|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_r4j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|lpm_mult1:inst18|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_2ch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|lpm_mult2:inst26|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_oah.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
