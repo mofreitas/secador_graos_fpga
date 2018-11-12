@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto3sd
-Sun Nov 11 13:06:32 2018
+Sun Nov 11 23:18:21 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis IP Cores Summary
+  6. Analysis & Synthesis Messages
 
 
 
@@ -36,7 +37,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Nov 11 13:06:32 2018               ;
+; Analysis & Synthesis Status        ; Failed - Sun Nov 11 23:18:21 2018               ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; projeto3sd                                      ;
 ; Top-level Entity Name              ; projeto3sd                                      ;
@@ -149,13 +150,24 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                 ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                 ; IP Include File                                                                     ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-------------------------------------------------------------------------------------+
+; Altera ; LPM_SHIFTREG ; 13.0    ; N/A          ; N/A          ; |projeto3sd|lpm_shiftOUT:inst2  ; D:/OneDrive/Arquivos escolares/UFRN/SD/Unidade3/secador_graos_fpga/lpm_shiftOUT.vhd ;
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |projeto3sd|lpm_add_sub0:inst20 ; D:/OneDrive/Arquivos escolares/UFRN/SD/Unidade3/secador_graos_fpga/lpm_add_sub0.vhd ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |projeto3sd|memory:inst21       ; D:/OneDrive/Arquivos escolares/UFRN/SD/Unidade3/secador_graos_fpga/memory.vhd       ;
++--------+--------------+---------+--------------+--------------+---------------------------------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Nov 11 13:06:28 2018
+    Info: Processing started: Sun Nov 11 23:18:19 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto3sd -c projeto3sd
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_shiftreg0.vhd
@@ -187,14 +199,121 @@ Info (12021): Found 2 design units, including 1 entities, in source file pwm_cou
 Info (12021): Found 2 design units, including 1 entities, in source file pwm_compare0.vhd
     Info (12022): Found design unit 1: pwm_compare0-SYN
     Info (12023): Found entity 1: PWM_compare0
+Info (12021): Found 2 design units, including 1 entities, in source file ff.vhd
+    Info (12022): Found design unit 1: ff-SYN
+    Info (12023): Found entity 1: ff
+Info (12021): Found 44 design units, including 22 entities, in source file altfp_add_sub0.vhd
+    Info (12022): Found design unit 1: altfp_add_sub0_altbarrel_shift_h0e-RTL
+    Info (12022): Found design unit 2: altfp_add_sub0_altbarrel_shift_n3g-RTL
+    Info (12022): Found design unit 3: altfp_add_sub0_altpriority_encoder_3e8-RTL
+    Info (12022): Found design unit 4: altfp_add_sub0_altpriority_encoder_6e8-RTL
+    Info (12022): Found design unit 5: altfp_add_sub0_altpriority_encoder_be8-RTL
+    Info (12022): Found design unit 6: altfp_add_sub0_altpriority_encoder_3v7-RTL
+    Info (12022): Found design unit 7: altfp_add_sub0_altpriority_encoder_6v7-RTL
+    Info (12022): Found design unit 8: altfp_add_sub0_altpriority_encoder_bv7-RTL
+    Info (12022): Found design unit 9: altfp_add_sub0_altpriority_encoder_uv8-RTL
+    Info (12022): Found design unit 10: altfp_add_sub0_altpriority_encoder_ue9-RTL
+    Info (12022): Found design unit 11: altfp_add_sub0_altpriority_encoder_ou8-RTL
+    Info (12022): Found design unit 12: altfp_add_sub0_altpriority_encoder_nh8-RTL
+    Info (12022): Found design unit 13: altfp_add_sub0_altpriority_encoder_qh8-RTL
+    Info (12022): Found design unit 14: altfp_add_sub0_altpriority_encoder_vh8-RTL
+    Info (12022): Found design unit 15: altfp_add_sub0_altpriority_encoder_ii9-RTL
+    Info (12022): Found design unit 16: altfp_add_sub0_altpriority_encoder_n28-RTL
+    Info (12022): Found design unit 17: altfp_add_sub0_altpriority_encoder_q28-RTL
+    Info (12022): Found design unit 18: altfp_add_sub0_altpriority_encoder_v28-RTL
+    Info (12022): Found design unit 19: altfp_add_sub0_altpriority_encoder_i39-RTL
+    Info (12022): Found design unit 20: altfp_add_sub0_altpriority_encoder_cna-RTL
+    Info (12022): Found design unit 21: altfp_add_sub0_altfp_add_sub_12j-RTL
+    Info (12022): Found design unit 22: altfp_add_sub0-RTL
+    Info (12023): Found entity 1: altfp_add_sub0_altbarrel_shift_h0e
+    Info (12023): Found entity 2: altfp_add_sub0_altbarrel_shift_n3g
+    Info (12023): Found entity 3: altfp_add_sub0_altpriority_encoder_3e8
+    Info (12023): Found entity 4: altfp_add_sub0_altpriority_encoder_6e8
+    Info (12023): Found entity 5: altfp_add_sub0_altpriority_encoder_be8
+    Info (12023): Found entity 6: altfp_add_sub0_altpriority_encoder_3v7
+    Info (12023): Found entity 7: altfp_add_sub0_altpriority_encoder_6v7
+    Info (12023): Found entity 8: altfp_add_sub0_altpriority_encoder_bv7
+    Info (12023): Found entity 9: altfp_add_sub0_altpriority_encoder_uv8
+    Info (12023): Found entity 10: altfp_add_sub0_altpriority_encoder_ue9
+    Info (12023): Found entity 11: altfp_add_sub0_altpriority_encoder_ou8
+    Info (12023): Found entity 12: altfp_add_sub0_altpriority_encoder_nh8
+    Info (12023): Found entity 13: altfp_add_sub0_altpriority_encoder_qh8
+    Info (12023): Found entity 14: altfp_add_sub0_altpriority_encoder_vh8
+    Info (12023): Found entity 15: altfp_add_sub0_altpriority_encoder_ii9
+    Info (12023): Found entity 16: altfp_add_sub0_altpriority_encoder_n28
+    Info (12023): Found entity 17: altfp_add_sub0_altpriority_encoder_q28
+    Info (12023): Found entity 18: altfp_add_sub0_altpriority_encoder_v28
+    Info (12023): Found entity 19: altfp_add_sub0_altpriority_encoder_i39
+    Info (12023): Found entity 20: altfp_add_sub0_altpriority_encoder_cna
+    Info (12023): Found entity 21: altfp_add_sub0_altfp_add_sub_12j
+    Info (12023): Found entity 22: altfp_add_sub0
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_mult0.vhd
+    Info (12022): Found design unit 1: lpm_mult0-SYN
+    Info (12023): Found entity 1: lpm_mult0
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_add_sub0.vhd
+    Info (12022): Found design unit 1: lpm_add_sub0-SYN
+    Info (12023): Found entity 1: lpm_add_sub0
+Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
+    Info (12022): Found design unit 1: memory-SYN
+    Info (12023): Found entity 1: memory
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_mult1.vhd
+    Info (12022): Found design unit 1: lpm_mult1-SYN
+    Info (12023): Found entity 1: lpm_mult1
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_mult2.vhd
+    Info (12022): Found design unit 1: lpm_mult2-SYN
+    Info (12023): Found entity 1: lpm_mult2
 Info (12127): Elaborating entity "projeto3sd" for the top level hierarchy
-Error (275051): Bus range for signal "port "data[LPM_WIDTH-1..0]" (ID LPM_FF:inst13)" must be a number
-Error (275051): Bus range for signal "port "q[LPM_WIDTH-1..0]" (ID LPM_FF:inst13)" must be a number
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
-    Error: Peak virtual memory: 4651 megabytes
-    Error: Processing ended: Sun Nov 11 13:06:32 2018
-    Error: Elapsed time: 00:00:04
+Info (12128): Elaborating entity "lpm_shiftOUT" for hierarchy "lpm_shiftOUT:inst2"
+Info (12128): Elaborating entity "lpm_shiftreg" for hierarchy "lpm_shiftOUT:inst2|lpm_shiftreg:LPM_SHIFTREG_component"
+Info (12130): Elaborated megafunction instantiation "lpm_shiftOUT:inst2|lpm_shiftreg:LPM_SHIFTREG_component"
+Info (12133): Instantiated megafunction "lpm_shiftOUT:inst2|lpm_shiftreg:LPM_SHIFTREG_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "LEFT"
+    Info (12134): Parameter "lpm_type" = "LPM_SHIFTREG"
+    Info (12134): Parameter "lpm_width" = "8"
+Info (12128): Elaborating entity "contador" for hierarchy "contador:inst3"
+Warning (10542): VHDL Variable Declaration warning at contador.vhd(18): used initial value expression for variable "constante" because variable was never assigned a value
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:inst13"
+Info (12130): Elaborated megafunction instantiation "LPM_FF:inst13"
+Info (12133): Instantiated megafunction "LPM_FF:inst13" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "13"
+Info (12128): Elaborating entity "lpm_add_sub0" for hierarchy "lpm_add_sub0:inst20"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "lpm_add_sub0:inst20|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12130): Elaborated megafunction instantiation "lpm_add_sub0:inst20|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12133): Instantiated megafunction "lpm_add_sub0:inst20|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "ADD"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "12"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_i4i.tdf
+    Info (12023): Found entity 1: add_sub_i4i
+Info (12128): Elaborating entity "add_sub_i4i" for hierarchy "lpm_add_sub0:inst20|lpm_add_sub:LPM_ADD_SUB_component|add_sub_i4i:auto_generated"
+Info (12128): Elaborating entity "memory" for hierarchy "memory:inst21"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "memory:inst21|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "memory:inst21|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "memory:inst21|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "../../../Downloads/memoriaTempo.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "128"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "widthad_a" = "7"
+    Info (12134): Parameter "width_a" = "12"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8691.tdf
+    Info (12023): Found entity 1: altsyncram_8691
+Info (12128): Elaborating entity "altsyncram_8691" for hierarchy "memory:inst21|altsyncram:altsyncram_component|altsyncram_8691:auto_generated"
+Error (127001): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File ../../../Downloads/memoriaTempo.mif for ROM instance  File: D:/OneDrive/Arquivos escolares/UFRN/SD/Unidade3/secador_graos_fpga/memory.vhd Line: 84
+Error (12152): Can't elaborate user hierarchy "memory:inst21|altsyncram:altsyncram_component|altsyncram_8691:auto_generated" File: c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
+    Error: Peak virtual memory: 4666 megabytes
+    Error: Processing ended: Sun Nov 11 23:18:21 2018
+    Error: Elapsed time: 00:00:02
     Error: Total CPU time (on all processors): 00:00:02
 
 

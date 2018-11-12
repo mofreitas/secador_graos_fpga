@@ -1,5 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="projeto3sd">
+		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|lpm_add_sub0:inst20|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_i4i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|projeto3sd|memory:inst21|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_8691.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

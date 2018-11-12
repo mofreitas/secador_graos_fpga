@@ -1,3 +1,1 @@
-# Secador de Graos
-
-Projeto da terceira unidade de Sistemas Digitais
+# secador_graos_fpga

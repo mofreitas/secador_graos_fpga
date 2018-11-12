@@ -16,8 +16,10 @@
 component lpm_counterCONTADOR1
 	PORT
 	(
-		clk_en		: IN STD_LOGIC ;
+		aclr		: IN STD_LOGIC ;
 		clock		: IN STD_LOGIC ;
-		q		: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
+		cnt_en		: IN STD_LOGIC ;
+		cout		: OUT STD_LOGIC ;
+		q		: OUT STD_LOGIC_VECTOR (6 DOWNTO 0)
 	);
 end component;
