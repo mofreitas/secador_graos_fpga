@@ -46,7 +46,7 @@ ENTITY lpm_counterCONTADOR1 IS
 		clock		: IN STD_LOGIC ;
 		cnt_en		: IN STD_LOGIC ;
 		cout		: OUT STD_LOGIC ;
-		q		: OUT STD_LOGIC_VECTOR (6 DOWNTO 0)
+		q		: OUT STD_LOGIC_VECTOR (23 DOWNTO 0)
 	);
 END lpm_counterCONTADOR1;
 
@@ -54,7 +54,7 @@ END lpm_counterCONTADOR1;
 ARCHITECTURE SYN OF lpm_countercontador1 IS
 
 	SIGNAL sub_wire0	: STD_LOGIC ;
-	SIGNAL sub_wire1	: STD_LOGIC_VECTOR (6 DOWNTO 0);
+	SIGNAL sub_wire1	: STD_LOGIC_VECTOR (23 DOWNTO 0);
 
 
 
@@ -71,21 +71,21 @@ ARCHITECTURE SYN OF lpm_countercontador1 IS
 			clock	: IN STD_LOGIC ;
 			cnt_en	: IN STD_LOGIC ;
 			cout	: OUT STD_LOGIC ;
-			q	: OUT STD_LOGIC_VECTOR (6 DOWNTO 0)
+			q	: OUT STD_LOGIC_VECTOR (23 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
 	cout    <= sub_wire0;
-	q    <= sub_wire1(6 DOWNTO 0);
+	q    <= sub_wire1(23 DOWNTO 0);
 
 	LPM_COUNTER_component : LPM_COUNTER
 	GENERIC MAP (
 		lpm_direction => "UP",
-		lpm_modulus => 120,
+		lpm_modulus => 12500000,
 		lpm_port_updown => "PORT_UNUSED",
 		lpm_type => "LPM_COUNTER",
-		lpm_width => 7
+		lpm_width => 24
 	)
 	PORT MAP (
 		aclr => aclr,
@@ -113,30 +113,30 @@ END SYN;
 -- Retrieval info: PRIVATE: Direction NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: ModulusCounter NUMERIC "1"
--- Retrieval info: PRIVATE: ModulusValue NUMERIC "120"
+-- Retrieval info: PRIVATE: ModulusValue NUMERIC "12500000"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "0"
 -- Retrieval info: PRIVATE: SLOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "7"
+-- Retrieval info: PRIVATE: nBit NUMERIC "24"
 -- Retrieval info: PRIVATE: new_diagram STRING "1"
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: CONSTANT: LPM_DIRECTION STRING "UP"
--- Retrieval info: CONSTANT: LPM_MODULUS NUMERIC "120"
+-- Retrieval info: CONSTANT: LPM_MODULUS NUMERIC "12500000"
 -- Retrieval info: CONSTANT: LPM_PORT_UPDOWN STRING "PORT_UNUSED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "7"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "24"
 -- Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL "aclr"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL "clock"
 -- Retrieval info: USED_PORT: cnt_en 0 0 0 0 INPUT NODEFVAL "cnt_en"
 -- Retrieval info: USED_PORT: cout 0 0 0 0 OUTPUT NODEFVAL "cout"
--- Retrieval info: USED_PORT: q 0 0 7 0 OUTPUT NODEFVAL "q[6..0]"
+-- Retrieval info: USED_PORT: q 0 0 24 0 OUTPUT NODEFVAL "q[23..0]"
 -- Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 -- Retrieval info: CONNECT: @cnt_en 0 0 0 0 cnt_en 0 0 0 0
 -- Retrieval info: CONNECT: cout 0 0 0 0 @cout 0 0 0 0
--- Retrieval info: CONNECT: q 0 0 7 0 @q 0 0 7 0
+-- Retrieval info: CONNECT: q 0 0 24 0 @q 0 0 24 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counterCONTADOR1.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counterCONTADOR1.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counterCONTADOR1.cmp TRUE
