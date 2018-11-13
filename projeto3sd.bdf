@@ -106,7 +106,7 @@ applicable agreement for further details.
 	(input)
 	(rect 520 752 688 768)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clkTESTE" (rect 5 0 53 12)(font "Arial" ))
+	(text "clkTESTE" (rect 5 0 52 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -219,7 +219,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 3024 656 3200 672)
+	(rect 3032 688 3208 704)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "enviar[12..0]" (rect 90 0 152 12)(font "Arial" ))
 	(pt 0 8)
@@ -251,7 +251,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 3032 704 3210 720)
+	(rect 3032 712 3210 728)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "pwm_func[12..0]" (rect 90 0 172 12)(font "Arial" ))
 	(pt 0 8)
@@ -1290,7 +1290,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 760 376 792 392)
+	(rect 760 368 792 384)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "ler" (rect 3 5 14 17)(font "Arial" )(invisible))
 	(port
@@ -1660,7 +1660,7 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 2384 336 2596 392))
 )
 (symbol
-	(rect 2360 480 2408 512)
+	(rect 2256 560 2304 592)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst29" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -2117,6 +2117,63 @@ applicable agreement for further details.
 		(line (pt 0 0)(pt 0 0))
 	)
 )
+(symbol
+	(rect 2320 560 2384 608)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst24" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
+(symbol
+	(rect 2256 600 2304 632)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst42" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt 496 312)
 	(pt 496 304)
@@ -2291,14 +2348,6 @@ applicable agreement for further details.
 	(pt 776 344)
 )
 (connector
-	(pt 624 392)
-	(pt 776 392)
-)
-(connector
-	(pt 624 288)
-	(pt 624 392)
-)
-(connector
 	(pt 496 824)
 	(pt 504 824)
 )
@@ -2464,11 +2513,6 @@ applicable agreement for further details.
 	(pt 2688 256)
 )
 (connector
-	(text "clkFPGA" (rect 2698 608 2742 620)(font "Arial" ))
-	(pt 2760 624)
-	(pt 2688 624)
-)
-(connector
 	(pt 2920 408)
 	(pt 2976 408)
 	(bus)
@@ -2501,15 +2545,6 @@ applicable agreement for further details.
 	(pt 2584 488)
 	(pt 2688 488)
 	(bus)
-)
-(connector
-	(text "en_wr" (rect 2298 568 2326 580)(font "Arial" ))
-	(pt 2360 584)
-	(pt 2288 584)
-)
-(connector
-	(pt 2360 496)
-	(pt 2360 584)
 )
 (connector
 	(text "resultado[12..0]" (rect 2346 464 2422 476)(font "Arial" ))
@@ -2723,6 +2758,57 @@ applicable agreement for further details.
 	(pt 848 200)
 	(pt 752 200)
 )
+(connector
+	(text "clkFPGA" (rect 2682 616 2726 628)(font "Arial" ))
+	(pt 2760 624)
+	(pt 2688 624)
+)
+(connector
+	(pt 2408 496)
+	(pt 2400 496)
+)
+(connector
+	(pt 2384 584)
+	(pt 2400 584)
+)
+(connector
+	(pt 2400 584)
+	(pt 2400 496)
+)
+(connector
+	(pt 2320 576)
+	(pt 2304 576)
+)
+(connector
+	(text "en_wr" (rect 2202 560 2230 572)(font "Arial" ))
+	(pt 2200 576)
+	(pt 2256 576)
+)
+(connector
+	(pt 2320 592)
+	(pt 2312 592)
+)
+(connector
+	(pt 2312 616)
+	(pt 2304 616)
+)
+(connector
+	(pt 2312 592)
+	(pt 2312 616)
+)
+(connector
+	(text "selData" (rect 2202 600 2239 612)(font "Arial" ))
+	(pt 2200 616)
+	(pt 2256 616)
+)
+(connector
+	(pt 624 384)
+	(pt 776 384)
+)
+(connector
+	(pt 624 288)
+	(pt 624 384)
+)
 (junction (pt 600 272))
 (junction (pt 368 136))
 (junction (pt 224 496))
@@ -2741,11 +2827,14 @@ applicable agreement for further details.
 (text "TIMER" (rect 888 680 978 707)(font "Arial" (font_size 18)))
 (text "Como não é para dar acim de 8 bits," (rect 1544 384 1748 398)(font "Arial" (font_size 8)))
 (text "Não consideramos carry out" (rect 1544 400 1705 414)(font "Arial" (font_size 8)))
-(text "Escrever" (rect 808 328 859 342)(font "Arial" (font_size 8)))
-(text "Ler" (rect 808 376 826 390)(font "Arial" (font_size 8)))
+(text "Ler" (rect 776 352 794 366)(font "Arial" (font_size 8)))
 (text "Sé permite a passagem do dado quando" (rect 2408 592 2636 606)(font "Arial" (font_size 8)))
-(text "en_wr vai 1-0, pois evita passar dados" (rect 2408 608 2632 622)(font "Arial" (font_size 8)))
-(text "a mudança do dado quando o tempo muda" (rect 2408 624 2648 638)(font "Arial" (font_size 8)))
+(text "Toggle ff responsável por dizer" (rect 808 216 987 230)(font "Arial" (font_size 8)))
+(text "se o dado é temp ou umid" (rect 808 232 953 246)(font "Arial" (font_size 8)))
+(text "Escrever" (rect 752 304 803 318)(font "Arial" (font_size 8)))
+(text "en_wr vai 1-0 e a cada 2 pulsos, de forma que " (rect 2408 608 2679 622)(font "Arial" (font_size 8)))
+(text "não são enviados valores intermediários para" (rect 2408 624 2667 638)(font "Arial" (font_size 8)))
+(text "o spi" (rect 2408 640 2435 654)(font "Arial" (font_size 8)))
 (rectangle (rect 144 56 968 592)(color 0 0 0)(line_width 2))
 (rectangle (rect 2632 -40 3216 736))
 (rectangle (rect 992 -32 2616 672))
