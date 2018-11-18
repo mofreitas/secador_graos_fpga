@@ -21,7 +21,7 @@ begin
 			saida <= constante;
 		elsif (rising_edge(clk) and cnt_en = '1') then
 			if(saida <= constante) then
-				saida <= STD_LOGIC_VECTOR(unsigned(saida) + "0001");
+				saida <= STD_LOGIC_VECTOR(unsigned(saida) + "111");
 			end if;
 			
 			if(saida = constante) then

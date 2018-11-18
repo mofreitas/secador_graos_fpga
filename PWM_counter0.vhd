@@ -43,6 +43,7 @@ ENTITY PWM_counter0 IS
 	PORT
 	(
 		clock		: IN STD_LOGIC ;
+		cout		: OUT STD_LOGIC ;
 		q		: OUT STD_LOGIC_VECTOR (12 DOWNTO 0)
 	);
 END PWM_counter0;
@@ -50,7 +51,8 @@ END PWM_counter0;
 
 ARCHITECTURE SYN OF pwm_counter0 IS
 
-	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (12 DOWNTO 0);
+	SIGNAL sub_wire0	: STD_LOGIC ;
+	SIGNAL sub_wire1	: STD_LOGIC_VECTOR (12 DOWNTO 0);
 
 
 
@@ -64,24 +66,27 @@ ARCHITECTURE SYN OF pwm_counter0 IS
 	);
 	PORT (
 			clock	: IN STD_LOGIC ;
+			cout	: OUT STD_LOGIC ;
 			q	: OUT STD_LOGIC_VECTOR (12 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
-	q    <= sub_wire0(12 DOWNTO 0);
+	cout    <= sub_wire0;
+	q    <= sub_wire1(12 DOWNTO 0);
 
 	LPM_COUNTER_component : LPM_COUNTER
 	GENERIC MAP (
 		lpm_direction => "UP",
-		lpm_modulus => 5000,
+		lpm_modulus => 1000,
 		lpm_port_updown => "PORT_UNUSED",
 		lpm_type => "LPM_COUNTER",
 		lpm_width => 13
 	)
 	PORT MAP (
 		clock => clock,
-		q => sub_wire0
+		cout => sub_wire0,
+		q => sub_wire1
 	);
 
 
@@ -98,11 +103,11 @@ END SYN;
 -- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: CNT_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: CarryIn NUMERIC "0"
--- Retrieval info: PRIVATE: CarryOut NUMERIC "0"
+-- Retrieval info: PRIVATE: CarryOut NUMERIC "1"
 -- Retrieval info: PRIVATE: Direction NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: ModulusCounter NUMERIC "1"
--- Retrieval info: PRIVATE: ModulusValue NUMERIC "5000"
+-- Retrieval info: PRIVATE: ModulusValue NUMERIC "1000"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "0"
 -- Retrieval info: PRIVATE: SLOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET NUMERIC "0"
@@ -112,17 +117,19 @@ END SYN;
 -- Retrieval info: PRIVATE: new_diagram STRING "1"
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: CONSTANT: LPM_DIRECTION STRING "UP"
--- Retrieval info: CONSTANT: LPM_MODULUS NUMERIC "5000"
+-- Retrieval info: CONSTANT: LPM_MODULUS NUMERIC "1000"
 -- Retrieval info: CONSTANT: LPM_PORT_UPDOWN STRING "PORT_UNUSED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COUNTER"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "13"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL "clock"
+-- Retrieval info: USED_PORT: cout 0 0 0 0 OUTPUT NODEFVAL "cout"
 -- Retrieval info: USED_PORT: q 0 0 13 0 OUTPUT NODEFVAL "q[12..0]"
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
+-- Retrieval info: CONNECT: cout 0 0 0 0 @cout 0 0 0 0
 -- Retrieval info: CONNECT: q 0 0 13 0 @q 0 0 13 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL PWM_counter0.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL PWM_counter0.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL PWM_counter0.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL PWM_counter0.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL PWM_counter0.bsf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL PWM_counter0_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm

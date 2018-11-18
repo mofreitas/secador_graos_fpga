@@ -1,0 +1,46 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity SPI_TRANSMITTER is
+  port ( SCK    	: in STD_LOGIC;											-- reset
+			MOSI	 	: in STD_LOGIC;
+         MISO   	: out STD_LOGIC;	
+			SS		 	: in STD_LOGIC;								-- clock
+			recebido : in STD_LOGIC;
+         receber  : out STD_LOGIC_VECTOR (7 downto 0);				-- Saída contador de 4 bits
+         enviar   : in STD_LOGIC_VECTOR (7 downto 0);					-- 3 bits para selecionar a operação (5 operações)
+       );
+end SPI_TRANSMITTER;
+
+architecture SPI_TRANSMITTER of SPI_TRANSMITTER is
+signal valor_recebido : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
+signal valor_enviado : STD_LOGIC_VECTOR(7 downto 0) := "00000000";
+signal pulse_cnt : STD_LOGIC_VECTOR(3 downto 0) := "111";
+begin
+	process (SCK, SS, pulse_cnt)
+	--variable constante : STD_LOGIC_VECTOR(3 downto 0) := "0111";
+	begin
+		if(SS = '1') then
+			valor_recebido <= "00000000";
+			valor_enviado <= "00000000";
+			pulse_cnt <= "000";		
+		elsif (rising_edge(SCK)) then
+			valor_recebido <= shift_left(unsigned(valor_recebido), 1);
+			valor_recebido(0) <= MOSI;
+			
+			pulse_cnt <= std_logic_vector(unsigned(pulse_cnt) + "001");
+			if(pulse_cnt <= "111") then
+				recebido <= '1';
+			end if;
+		elsif (falling_edge(SCK)) then
+			MISO <= valor_enviado(7);
+			valor_enviado <= shift_left(unsigned(valor_enviado), 1);	
+		elsif (pulse_cnt = '1') then
+			valor_enviado <= enviar;
+		end if;
+	end process;	
+	
+	--Condição quando saida = 8
+	receber <= valor_recebido;
+end SPI_TRANSMITTER;

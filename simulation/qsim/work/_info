@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Downloads\p3\simulation\qsim
+vprojeto3sd
+Z1 IPNdlMDm@InYI@X?nAmhFf1
+Z2 VMQ>TI^VEgZcZaFj^Gb0<n3
+Z3 dC:\Users\Aluno\Documents\teste\p3\simulation\qsim
+Z4 w1542383757
+Z5 8projeto3sd.vo
+Z6 Fprojeto3sd.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|projeto3sd.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 VMK<PZTh^QfPgR5]X?cVz3
+!s85 0
+Z11 !s108 1542383758.101000
+Z12 !s107 projeto3sd.vo|
+!s101 -O0
+vprojeto3sd_vlg_check_tst
+!i10b 1
+Z13 !s100 SR:2_zbjF9VQm409<XgI@1
+Z14 IB39[g9W6ChFcJQl0PUlTB2
+Z15 VzK=@[k7;?iLY8VJInU`2m0
+R3
+Z16 w1542383756
+Z17 8projeto3sd.vt
+Z18 Fprojeto3sd.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z19 !s108 1542383758.385000
+Z20 !s107 projeto3sd.vt|
+Z21 !s90 -work|work|projeto3sd.vt|
+!s101 -O0
+R9
+vprojeto3sd_vlg_sample_tst
+!i10b 1
+Z22 !s100 LFUP?]2aK3h3U`nBTh>h>3
+Z23 I1j:g[Sb=]0;I@^SLgNjbU2
+Z24 V>Q;fI]^@7ghdQSne^zF`T2
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vprojeto3sd_vlg_vec_tst
+!i10b 1
+Z25 !s100 h2izOcVol0X7<PjhzA6TA2
+Z26 IedPZln=I3I[JegUC=jKz]3
+Z27 V3;A@=mcO<olA`=XZ5YM5h1
+R3
+R16
+R17
+R18
+Z28 L0 626
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
