@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dC:\Users\Aluno\Downloads\p3\simulation\qsim
 vprojeto3sd
-Z1 IPNdlMDm@InYI@X?nAmhFf1
-Z2 VMQ>TI^VEgZcZaFj^Gb0<n3
-Z3 dC:\Users\Aluno\Documents\teste\p3\simulation\qsim
-Z4 w1542383757
+Z1 IbC_2BRW4lC6:Q:GeH3T2[1
+Z2 VTB=n2_Wl8gPF3@kzRL3V?1
+Z3 dC:\Users\Aluno\Documents\projsd\simulation\qsim
+Z4 w1542639870
 Z5 8projeto3sd.vo
 Z6 Fprojeto3sd.vo
 L0 31
@@ -17,18 +17,18 @@ r1
 Z8 !s90 -work|work|projeto3sd.vo|
 Z9 o-work work -O0
 !i10b 1
-Z10 !s100 VMK<PZTh^QfPgR5]X?cVz3
+Z10 !s100 4fHGnCZGi5IFiXMHEAgF50
 !s85 0
-Z11 !s108 1542383758.101000
+Z11 !s108 1542639871.007000
 Z12 !s107 projeto3sd.vo|
 !s101 -O0
 vprojeto3sd_vlg_check_tst
 !i10b 1
-Z13 !s100 SR:2_zbjF9VQm409<XgI@1
-Z14 IB39[g9W6ChFcJQl0PUlTB2
-Z15 VzK=@[k7;?iLY8VJInU`2m0
+Z13 !s100 JTNc_oPNVmQ=BlJ_f@T;H2
+Z14 InR;3i01V`5kFBi><KMz5[2
+Z15 VSYEhm>5`PiRPhm?TL;PWa1
 R3
-Z16 w1542383756
+Z16 w1542639869
 Z17 8projeto3sd.vt
 Z18 Fprojeto3sd.vt
 L0 65
@@ -36,7 +36,7 @@ R7
 r1
 !s85 0
 31
-Z19 !s108 1542383758.385000
+Z19 !s108 1542639871.329000
 Z20 !s107 projeto3sd.vt|
 Z21 !s90 -work|work|projeto3sd.vt|
 !s101 -O0
@@ -62,14 +62,14 @@ R21
 R9
 vprojeto3sd_vlg_vec_tst
 !i10b 1
-Z25 !s100 h2izOcVol0X7<PjhzA6TA2
-Z26 IedPZln=I3I[JegUC=jKz]3
+Z25 !s100 P_IEM05iECV[>U_;>Q`7l1
+Z26 IVmN7e2VJih7NI9h`MjT=X1
 Z27 V3;A@=mcO<olA`=XZ5YM5h1
 R3
 R16
 R17
 R18
-Z28 L0 626
+Z28 L0 1522
 R7
 r1
 !s85 0

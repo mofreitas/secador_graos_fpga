@@ -16,21 +16,87 @@
 # vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.projeto3sd_vlg_vec_tst 
 # Loading work.projeto3sd_vlg_vec_tst
 # Loading work.projeto3sd
-# Loading cycloneii_ver.cycloneii_lcell_ff
 # Loading cycloneii_ver.cycloneii_lcell_comb
-# Loading cycloneii_ver.cycloneii_ram_block
-# Loading cycloneii_ver.cycloneii_ram_register
-# Loading cycloneii_ver.cycloneii_ram_pulse_generator
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
 # Loading cycloneii_ver.cycloneii_io
 # Loading cycloneii_ver.cycloneii_mux21
 # Loading cycloneii_ver.cycloneii_dffe
 # Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_ram_block
+# Loading cycloneii_ver.cycloneii_ram_register
+# Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading work.projeto3sd_vlg_sample_tst
 # Loading work.projeto3sd_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from projeto3sd_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# ERROR! Vector Mismatch for output port MISO :: @time = 1525000.000 ps
+# Loading timing data from projeto3sd_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /projeto3sd_vlg_vec_tst File: projeto3sd.vt
+# ERROR! Vector Mismatch for output port chave_out :: @time = 2000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-#           1 mismatched vectors : Simulation failed !
-# ** Note: $finish    : projeto3sd.vt(622)
-#    Time: 2 us  Iteration: 0  Instance: /projeto3sd_vlg_vec_tst/tb_out
+# ERROR! Vector Mismatch for output port LED_ATIV :: @time = 2000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port temp_out[0] :: @time = 3520000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000001
+# ERROR! Vector Mismatch for output port temp_out[1] :: @time = 4520000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000010
+# ERROR! Vector Mismatch for output port temp_out[2] :: @time = 5520000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000101
+# ERROR! Vector Mismatch for output port temp_out[3] :: @time = 6520000.000 ps
+#      Expected value = 00000000
+#      Real value = 00001010
+# ERROR! Vector Mismatch for output port temp_out[4] :: @time = 7520000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010100
+# ERROR! Vector Mismatch for output port en_wr :: @time = 8510000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port selData :: @time = 8510000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port MISO :: @time = 14020000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port enviar[5] :: @time = 19990000.000 ps
+#      Expected value = 0000000000000
+#      Real value = 0001010100000
+# ERROR! Vector Mismatch for output port enviar[7] :: @time = 19990000.000 ps
+#      Expected value = 0000000000000
+#      Real value = 0001010100000
+# ERROR! Vector Mismatch for output port enviar[9] :: @time = 19990000.000 ps
+#      Expected value = 0000000000000
+#      Real value = 0001010100000
+# ERROR! Vector Mismatch for output port PWM1 :: @time = 20010000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port temp_out[5] :: @time = 25520000.000 ps
+#      Expected value = 00000000
+#      Real value = 00100010
+# ERROR! Vector Mismatch for output port temp_out[6] :: @time = 26520000.000 ps
+#      Expected value = 00000000
+#      Real value = 01000100
+# ERROR! Vector Mismatch for output port temp_out[7] :: @time = 27520000.000 ps
+#      Expected value = 00000000
+#      Real value = 10001001
+# ERROR! Vector Mismatch for output port enviar[6] :: @time = 39990000.000 ps
+#      Expected value = 0000000000000
+#      Real value = 0000001000000
+# ERROR! Vector Mismatch for output port enviar[3] :: @time = 59990000.000 ps
+#      Expected value = 0000000000000
+#      Real value = 0000100001000
+# ERROR! Vector Mismatch for output port enviar[8] :: @time = 59990000.000 ps
+#      Expected value = 0000000000000
+#      Real value = 0000100001000
+#          20 mismatched vectors : Simulation failed !
+# ** Note: $finish    : projeto3sd.vt(1518)
+#    Time: 100 us  Iteration: 0  Instance: /projeto3sd_vlg_vec_tst/tb_out

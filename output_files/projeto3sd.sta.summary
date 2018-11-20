@@ -3,72 +3,72 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clkFPGA'
-Slack : -7.309
-TNS   : -365.365
+Slack : -6.978
+TNS   : -303.314
+
+Type  : Slow Model Setup 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|safe_q[0]'
+Slack : -4.780
+TNS   : -57.787
 
 Type  : Slow Model Setup 'lpm_counterCONTADOR1:inst22|lpm_counter:LPM_COUNTER_component|cntr_ksk:auto_generated|safe_q[0]'
-Slack : -3.875
-TNS   : -27.125
-
-Type  : Slow Model Setup 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|safe_q[0]'
-Slack : -3.836
-TNS   : -41.173
-
-Type  : Slow Model Setup 'inst41'
-Slack : -2.399
-TNS   : -19.814
+Slack : -3.937
+TNS   : -27.559
 
 Type  : Slow Model Setup 'SCK'
-Slack : -1.810
-TNS   : -7.352
+Slack : -3.137
+TNS   : -32.223
 
 Type  : Slow Model Setup 'lpm_counterSPI:inst3|lpm_counter:LPM_COUNTER_component|cntr_nml:auto_generated|pre_hazard[0]'
-Slack : -0.447
-TNS   : -1.535
-
-Type  : Slow Model Hold 'SCK'
-Slack : -6.574
-TNS   : -61.121
-
-Type  : Slow Model Hold 'lpm_counterSPI:inst3|lpm_counter:LPM_COUNTER_component|cntr_nml:auto_generated|pre_hazard[0]'
-Slack : -2.612
-TNS   : -22.556
+Slack : -0.715
+TNS   : -0.715
 
 Type  : Slow Model Hold 'clkFPGA'
-Slack : -2.398
-TNS   : -61.692
+Slack : -2.587
+TNS   : -69.929
 
-Type  : Slow Model Hold 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|safe_q[0]'
-Slack : -0.992
-TNS   : -8.357
+Type  : Slow Model Hold 'SCK'
+Slack : -1.786
+TNS   : -13.966
+
+Type  : Slow Model Hold 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|safe_q[0]'
+Slack : -1.225
+TNS   : -10.798
 
 Type  : Slow Model Hold 'lpm_counterCONTADOR1:inst22|lpm_counter:LPM_COUNTER_component|cntr_ksk:auto_generated|safe_q[0]'
-Slack : -0.863
-TNS   : -5.850
+Slack : -0.913
+TNS   : -6.085
 
-Type  : Slow Model Hold 'inst41'
-Slack : 0.514
-TNS   : 0.000
+Type  : Slow Model Hold 'lpm_counterSPI:inst3|lpm_counter:LPM_COUNTER_component|cntr_nml:auto_generated|pre_hazard[0]'
+Slack : -0.703
+TNS   : -0.703
 
 Type  : Slow Model Recovery 'clkFPGA'
-Slack : -7.405
-TNS   : -176.916
+Slack : -7.066
+TNS   : -145.869
 
-Type  : Slow Model Recovery 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|safe_q[0]'
-Slack : -5.009
-TNS   : -116.369
+Type  : Slow Model Recovery 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|safe_q[0]'
+Slack : -5.764
+TNS   : -136.078
 
-Type  : Slow Model Removal 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|safe_q[0]'
-Slack : 2.615
+Type  : Slow Model Removal 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|safe_q[0]'
+Slack : 2.358
 TNS   : 0.000
 
 Type  : Slow Model Removal 'clkFPGA'
-Slack : 5.544
+Slack : 3.911
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'lpm_counterCONTADOR1:inst22|lpm_counter:LPM_COUNTER_component|cntr_ksk:auto_generated|safe_q[0]'
-Slack : -2.189
-TNS   : -54.426
+Slack : -2.227
+TNS   : -55.718
+
+Type  : Slow Model Minimum Pulse Width 'lpm_counterSPI:inst3|lpm_counter:LPM_COUNTER_component|cntr_nml:auto_generated|pre_hazard[0]'
+Slack : -1.594
+TNS   : -5.564
+
+Type  : Slow Model Minimum Pulse Width 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|safe_q[0]'
+Slack : -1.440
+TNS   : -96.640
 
 Type  : Slow Model Minimum Pulse Width 'clkFPGA'
 Slack : -1.423
@@ -78,80 +78,60 @@ Type  : Slow Model Minimum Pulse Width 'SCK'
 Slack : -1.222
 TNS   : -21.222
 
-Type  : Slow Model Minimum Pulse Width 'lpm_counterSPI:inst3|lpm_counter:LPM_COUNTER_component|cntr_nml:auto_generated|pre_hazard[0]'
-Slack : -1.030
-TNS   : -29.980
-
-Type  : Slow Model Minimum Pulse Width 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|safe_q[0]'
-Slack : -0.614
-TNS   : -30.700
-
-Type  : Slow Model Minimum Pulse Width 'inst41'
-Slack : -0.500
-TNS   : -13.000
-
 Type  : Fast Model Setup 'clkFPGA'
-Slack : -2.994
-TNS   : -130.442
+Slack : -2.634
+TNS   : -98.664
+
+Type  : Fast Model Setup 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|safe_q[0]'
+Slack : -1.672
+TNS   : -16.420
 
 Type  : Fast Model Setup 'lpm_counterCONTADOR1:inst22|lpm_counter:LPM_COUNTER_component|cntr_ksk:auto_generated|safe_q[0]'
-Slack : -1.344
-TNS   : -9.408
-
-Type  : Fast Model Setup 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|safe_q[0]'
-Slack : -1.253
-TNS   : -11.723
-
-Type  : Fast Model Setup 'inst41'
-Slack : -0.834
-TNS   : -6.415
+Slack : -1.381
+TNS   : -9.667
 
 Type  : Fast Model Setup 'SCK'
-Slack : -0.275
-TNS   : -1.100
+Slack : -1.288
+TNS   : -11.480
 
 Type  : Fast Model Setup 'lpm_counterSPI:inst3|lpm_counter:LPM_COUNTER_component|cntr_nml:auto_generated|pre_hazard[0]'
-Slack : 0.327
+Slack : 0.185
 TNS   : 0.000
-
-Type  : Fast Model Hold 'SCK'
-Slack : -3.389
-TNS   : -32.328
 
 Type  : Fast Model Hold 'clkFPGA'
-Slack : -1.440
-TNS   : -45.149
+Slack : -1.554
+TNS   : -51.640
 
-Type  : Fast Model Hold 'lpm_counterSPI:inst3|lpm_counter:LPM_COUNTER_component|cntr_nml:auto_generated|pre_hazard[0]'
-Slack : -1.212
-TNS   : -8.056
+Type  : Fast Model Hold 'SCK'
+Slack : -1.044
+TNS   : -9.508
 
 Type  : Fast Model Hold 'lpm_counterCONTADOR1:inst22|lpm_counter:LPM_COUNTER_component|cntr_ksk:auto_generated|safe_q[0]'
-Slack : -0.466
-TNS   : -3.175
+Slack : -0.498
+TNS   : -3.339
 
-Type  : Fast Model Hold 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|safe_q[0]'
-Slack : -0.184
-TNS   : -0.681
+Type  : Fast Model Hold 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|safe_q[0]'
+Slack : -0.418
+TNS   : -3.272
 
-Type  : Fast Model Hold 'inst41'
-Slack : 0.626
-TNS   : 0.000
+Type  : Fast Model Hold 'lpm_counterSPI:inst3|lpm_counter:LPM_COUNTER_component|cntr_nml:auto_generated|pre_hazard[0]'
+Slack : -0.265
+TNS   : -0.265
 
 Type  : Fast Model Recovery 'clkFPGA'
-Slack : -3.066
-TNS   : -73.016
+Slack : -2.706
+TNS   : -56.894
 
-Type  : Fast Model Recovery 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|safe_q[0]'
-Slack : -1.898
-TNS   : -43.464
+Type  : Fast Model Recovery 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|safe_q[0]'
+Slack : -2.225
+TNS   : -52.131
 
-Type  : Fast Model Removal 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|safe_q[0]'
-Slack : 1.250
+Type  : Fast Model Removal 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|safe_q[0]'
+Slack : 1.123
 TNS   : 0.000
 
 Type  : Fast Model Removal 'clkFPGA'
-Slack : 2.535
+Slack : 1.855
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'clkFPGA'
@@ -159,23 +139,19 @@ Slack : -1.423
 TNS   : -121.454
 
 Type  : Fast Model Minimum Pulse Width 'lpm_counterCONTADOR1:inst22|lpm_counter:LPM_COUNTER_component|cntr_ksk:auto_generated|safe_q[0]'
-Slack : -1.337
-TNS   : -25.458
+Slack : -1.362
+TNS   : -26.308
 
 Type  : Fast Model Minimum Pulse Width 'SCK'
 Slack : -1.222
 TNS   : -21.222
 
 Type  : Fast Model Minimum Pulse Width 'lpm_counterSPI:inst3|lpm_counter:LPM_COUNTER_component|cntr_nml:auto_generated|pre_hazard[0]'
-Slack : -0.680
-TNS   : -19.040
+Slack : -0.980
+TNS   : -1.960
 
-Type  : Fast Model Minimum Pulse Width 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|safe_q[0]'
-Slack : -0.579
-TNS   : -28.950
-
-Type  : Fast Model Minimum Pulse Width 'inst41'
-Slack : -0.500
-TNS   : -13.000
+Type  : Fast Model Minimum Pulse Width 'PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|safe_q[0]'
+Slack : -0.945
+TNS   : -47.250
 
 ------------------------------------------------------------

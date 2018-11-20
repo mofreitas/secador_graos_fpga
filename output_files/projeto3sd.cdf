@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C35F672) Path("C:/Users/Aluno/Documents/teste/p3/output_files/") File("projeto3sd.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C35F672) Path("C:/Users/Aluno/Documents/trabaio/projsd/output_files/") File("projeto3sd.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

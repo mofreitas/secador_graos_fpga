@@ -2,29 +2,15 @@
 MISO <= lpm_shiftOUT:inst2.shiftout
 SCK => lpm_counterSPI:inst3.clock
 SCK => inst25.IN0
-SCK => inst37.IN0
+SCK => inst11.IN0
 SCK => lpm_shiftreg0:inst.clock
-SCK => inst33.IN0
+SCK => inst15.IN0
 SS => inst5.IN0
 SS => inst44.IN1
 chave => inst35.IN0
 chave => inst145.IN0
 chave => inst14.IN1
 chave => inst41.ACLR
-chave => chave_out.DATAIN
-enviar[0] <= LPM_FF:inst12.q[0]
-enviar[1] <= LPM_FF:inst12.q[1]
-enviar[2] <= LPM_FF:inst12.q[2]
-enviar[3] <= LPM_FF:inst12.q[3]
-enviar[4] <= LPM_FF:inst12.q[4]
-enviar[5] <= LPM_FF:inst12.q[5]
-enviar[6] <= LPM_FF:inst12.q[6]
-enviar[7] <= LPM_FF:inst12.q[7]
-enviar[8] <= LPM_FF:inst12.q[8]
-enviar[9] <= LPM_FF:inst12.q[9]
-enviar[10] <= LPM_FF:inst12.q[10]
-enviar[11] <= LPM_FF:inst12.q[11]
-enviar[12] <= LPM_FF:inst12.q[12]
 LED_ATIV <= inst145.DB_MAX_OUTPUT_PORT_TYPE
 clkFPGA => lpm_counterCONTADOR1:inst22.clock
 clkFPGA => PWM_counter0:inst9.clock
@@ -32,41 +18,10 @@ clkFPGA => memory:inst21.clock
 clkFPGA => LPM_FF:inst43.clock
 clkFPGA => LPM_FF:inst45.clock
 clkFPGA => PWM_counter0:inst6.clock
-pwm_func[0] <= LPM_DFF:inst28.q[0]
-pwm_func[1] <= LPM_DFF:inst28.q[1]
-pwm_func[2] <= LPM_DFF:inst28.q[2]
-pwm_func[3] <= LPM_DFF:inst28.q[3]
-pwm_func[4] <= LPM_DFF:inst28.q[4]
-pwm_func[5] <= LPM_DFF:inst28.q[5]
-pwm_func[6] <= LPM_DFF:inst28.q[6]
-pwm_func[7] <= LPM_DFF:inst28.q[7]
-pwm_func[8] <= LPM_DFF:inst28.q[8]
-pwm_func[9] <= LPM_DFF:inst28.q[9]
-pwm_func[10] <= LPM_DFF:inst28.q[10]
-pwm_func[11] <= LPM_DFF:inst28.q[11]
-pwm_func[12] <= LPM_DFF:inst28.q[12]
-en_wr <= lpm_counterSPI:inst3.cout
-selData <= inst41.DB_MAX_OUTPUT_PORT_TYPE
-umid_out[0] <= LPM_FF:inst43.q[0]
-umid_out[1] <= LPM_FF:inst43.q[1]
-umid_out[2] <= LPM_FF:inst43.q[2]
-umid_out[3] <= LPM_FF:inst43.q[3]
-umid_out[4] <= LPM_FF:inst43.q[4]
-umid_out[5] <= LPM_FF:inst43.q[5]
-umid_out[6] <= LPM_FF:inst43.q[6]
-umid_out[7] <= LPM_FF:inst43.q[7]
 MOSI => lpm_shiftreg0:inst.shiftin
-temp_out[0] <= LPM_FF:inst45.q[0]
-temp_out[1] <= LPM_FF:inst45.q[1]
-temp_out[2] <= LPM_FF:inst45.q[2]
-temp_out[3] <= LPM_FF:inst45.q[3]
-temp_out[4] <= LPM_FF:inst45.q[4]
-temp_out[5] <= LPM_FF:inst45.q[5]
-temp_out[6] <= LPM_FF:inst45.q[6]
-temp_out[7] <= LPM_FF:inst45.q[7]
 PWM1 <= PWM_compare0:inst8.alb
 PWM2 <= PWM_compare0:inst7.alb
-chave_out <= chave.DB_MAX_OUTPUT_PORT_TYPE
+chave_out <= inst145.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto3sd|lpm_shiftOUT:inst2
@@ -650,7 +605,7 @@ q[12] <= lpm_counter:LPM_COUNTER_component.q[12]
 
 
 |projeto3sd|PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component
-clock => cntr_ijj:auto_generated.clock
+clock => cntr_mjj:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
 updown => ~NO_FANOUT~
@@ -676,20 +631,20 @@ data[10] => ~NO_FANOUT~
 data[11] => ~NO_FANOUT~
 data[12] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_ijj:auto_generated.q[0]
-q[1] <= cntr_ijj:auto_generated.q[1]
-q[2] <= cntr_ijj:auto_generated.q[2]
-q[3] <= cntr_ijj:auto_generated.q[3]
-q[4] <= cntr_ijj:auto_generated.q[4]
-q[5] <= cntr_ijj:auto_generated.q[5]
-q[6] <= cntr_ijj:auto_generated.q[6]
-q[7] <= cntr_ijj:auto_generated.q[7]
-q[8] <= cntr_ijj:auto_generated.q[8]
-q[9] <= cntr_ijj:auto_generated.q[9]
-q[10] <= cntr_ijj:auto_generated.q[10]
-q[11] <= cntr_ijj:auto_generated.q[11]
-q[12] <= cntr_ijj:auto_generated.q[12]
-cout <= cntr_ijj:auto_generated.cout
+q[0] <= cntr_mjj:auto_generated.q[0]
+q[1] <= cntr_mjj:auto_generated.q[1]
+q[2] <= cntr_mjj:auto_generated.q[2]
+q[3] <= cntr_mjj:auto_generated.q[3]
+q[4] <= cntr_mjj:auto_generated.q[4]
+q[5] <= cntr_mjj:auto_generated.q[5]
+q[6] <= cntr_mjj:auto_generated.q[6]
+q[7] <= cntr_mjj:auto_generated.q[7]
+q[8] <= cntr_mjj:auto_generated.q[8]
+q[9] <= cntr_mjj:auto_generated.q[9]
+q[10] <= cntr_mjj:auto_generated.q[10]
+q[11] <= cntr_mjj:auto_generated.q[11]
+q[12] <= cntr_mjj:auto_generated.q[12]
+cout <= cntr_mjj:auto_generated.cout
 eq[0] <= <GND>
 eq[1] <= <GND>
 eq[2] <= <GND>
@@ -708,7 +663,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|projeto3sd|PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated
+|projeto3sd|PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated
 clock => counter_reg_bit1a[12].CLK
 clock => counter_reg_bit1a[11].CLK
 clock => counter_reg_bit1a[10].CLK
@@ -738,7 +693,7 @@ q[11] <= counter_reg_bit1a[11].REGOUT
 q[12] <= counter_reg_bit1a[12].REGOUT
 
 
-|projeto3sd|PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|cmpr_odc:cmpr2
+|projeto3sd|PWM_counter0:inst9|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|cmpr_odc:cmpr2
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[2].IN0
 dataa[1] => data_wire[2].IN0
@@ -766,95 +721,6 @@ datab[9] => data_wire[6].IN1
 datab[10] => data_wire[7].IN1
 datab[11] => data_wire[7].IN1
 datab[12] => data_wire[8].IN1
-
-
-|projeto3sd|LPM_DFF:inst28
-data[0] => _.IN1
-data[1] => _.IN1
-data[2] => _.IN1
-data[3] => _.IN1
-data[4] => _.IN1
-data[5] => _.IN1
-data[6] => _.IN1
-data[7] => _.IN1
-data[8] => _.IN1
-data[9] => _.IN1
-data[10] => _.IN1
-data[11] => _.IN1
-data[12] => _.IN1
-clock => dffs[12].CLK
-clock => dffs[11].CLK
-clock => dffs[10].CLK
-clock => dffs[9].CLK
-clock => dffs[8].CLK
-clock => dffs[7].CLK
-clock => dffs[6].CLK
-clock => dffs[5].CLK
-clock => dffs[4].CLK
-clock => dffs[3].CLK
-clock => dffs[2].CLK
-clock => dffs[1].CLK
-clock => dffs[0].CLK
-enable => dffs[12].ENA
-enable => dffs[11].ENA
-enable => dffs[10].ENA
-enable => dffs[9].ENA
-enable => dffs[8].ENA
-enable => dffs[7].ENA
-enable => dffs[6].ENA
-enable => dffs[5].ENA
-enable => dffs[4].ENA
-enable => dffs[3].ENA
-enable => dffs[2].ENA
-enable => dffs[1].ENA
-enable => dffs[0].ENA
-shiftin => _.IN1
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-shiften => _.IN0
-aclr => ~NO_FANOUT~
-aset => ~NO_FANOUT~
-aconst => ~NO_FANOUT~
-sclr => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sset => _.IN0
-sconst => ~NO_FANOUT~
-q[0] <= dffs[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= dffs[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= dffs[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= dffs[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
-q[8] <= dffs[8].DB_MAX_OUTPUT_PORT_TYPE
-q[9] <= dffs[9].DB_MAX_OUTPUT_PORT_TYPE
-q[10] <= dffs[10].DB_MAX_OUTPUT_PORT_TYPE
-q[11] <= dffs[11].DB_MAX_OUTPUT_PORT_TYPE
-q[12] <= dffs[12].DB_MAX_OUTPUT_PORT_TYPE
-shiftout <= shiftout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |projeto3sd|lpm_add_sub0:inst20
@@ -2089,7 +1955,7 @@ q[12] <= lpm_counter:LPM_COUNTER_component.q[12]
 
 
 |projeto3sd|PWM_counter0:inst6|lpm_counter:LPM_COUNTER_component
-clock => cntr_ijj:auto_generated.clock
+clock => cntr_mjj:auto_generated.clock
 clk_en => ~NO_FANOUT~
 cnt_en => ~NO_FANOUT~
 updown => ~NO_FANOUT~
@@ -2115,20 +1981,20 @@ data[10] => ~NO_FANOUT~
 data[11] => ~NO_FANOUT~
 data[12] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_ijj:auto_generated.q[0]
-q[1] <= cntr_ijj:auto_generated.q[1]
-q[2] <= cntr_ijj:auto_generated.q[2]
-q[3] <= cntr_ijj:auto_generated.q[3]
-q[4] <= cntr_ijj:auto_generated.q[4]
-q[5] <= cntr_ijj:auto_generated.q[5]
-q[6] <= cntr_ijj:auto_generated.q[6]
-q[7] <= cntr_ijj:auto_generated.q[7]
-q[8] <= cntr_ijj:auto_generated.q[8]
-q[9] <= cntr_ijj:auto_generated.q[9]
-q[10] <= cntr_ijj:auto_generated.q[10]
-q[11] <= cntr_ijj:auto_generated.q[11]
-q[12] <= cntr_ijj:auto_generated.q[12]
-cout <= cntr_ijj:auto_generated.cout
+q[0] <= cntr_mjj:auto_generated.q[0]
+q[1] <= cntr_mjj:auto_generated.q[1]
+q[2] <= cntr_mjj:auto_generated.q[2]
+q[3] <= cntr_mjj:auto_generated.q[3]
+q[4] <= cntr_mjj:auto_generated.q[4]
+q[5] <= cntr_mjj:auto_generated.q[5]
+q[6] <= cntr_mjj:auto_generated.q[6]
+q[7] <= cntr_mjj:auto_generated.q[7]
+q[8] <= cntr_mjj:auto_generated.q[8]
+q[9] <= cntr_mjj:auto_generated.q[9]
+q[10] <= cntr_mjj:auto_generated.q[10]
+q[11] <= cntr_mjj:auto_generated.q[11]
+q[12] <= cntr_mjj:auto_generated.q[12]
+cout <= cntr_mjj:auto_generated.cout
 eq[0] <= <GND>
 eq[1] <= <GND>
 eq[2] <= <GND>
@@ -2147,7 +2013,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|projeto3sd|PWM_counter0:inst6|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated
+|projeto3sd|PWM_counter0:inst6|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated
 clock => counter_reg_bit1a[12].CLK
 clock => counter_reg_bit1a[11].CLK
 clock => counter_reg_bit1a[10].CLK
@@ -2177,7 +2043,7 @@ q[11] <= counter_reg_bit1a[11].REGOUT
 q[12] <= counter_reg_bit1a[12].REGOUT
 
 
-|projeto3sd|PWM_counter0:inst6|lpm_counter:LPM_COUNTER_component|cntr_ijj:auto_generated|cmpr_odc:cmpr2
+|projeto3sd|PWM_counter0:inst6|lpm_counter:LPM_COUNTER_component|cntr_mjj:auto_generated|cmpr_odc:cmpr2
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[2].IN0
 dataa[1] => data_wire[2].IN0

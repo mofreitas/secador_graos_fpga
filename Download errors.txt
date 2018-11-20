@@ -1,8 +1,16 @@
 ﻿Sorry, there was a problem downloading some files from OneDrive. Please try again.
 
-logic_util_heursitic.dat - https://onedrive.live.com/?cid=63e2f9c29556a79d&id=63E2F9C29556A79D%2199914&action=Download
-
 projeto3sd.syn_hier_info - https://onedrive.live.com/?cid=63e2f9c29556a79d&id=63E2F9C29556A79D%2199783&action=Download
+
+lpm_add_sub0.qip - https://onedrive.live.com/?cid=63e2f9c29556a79d&id=63E2F9C29556A79D%21102171&action=Download
+
+lpm_counter025.qip - https://onedrive.live.com/?cid=63e2f9c29556a79d&id=63E2F9C29556A79D%21102170&action=Download
+
+lpm_counterCONTADOR1.qip - https://onedrive.live.com/?cid=63e2f9c29556a79d&id=63E2F9C29556A79D%21102169&action=Download
+
+lpm_shiftOUT.qip - https://onedrive.live.com/?cid=63e2f9c29556a79d&id=63E2F9C29556A79D%21102164&action=Download
+
+testeSPI.qip - https://onedrive.live.com/?cid=63e2f9c29556a79d&id=63E2F9C29556A79D%21102168&action=Download
 
 
 
