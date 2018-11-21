@@ -73,7 +73,7 @@ ARCHITECTURE SYN OF lpm_mult1 IS
 	END COMPONENT;
 
 BEGIN
-	sub_wire1_bv(6 DOWNTO 0) <= "0101010";
+	sub_wire1_bv(6 DOWNTO 0) <= "0101001";
 	sub_wire1    <= To_stdlogicvector(sub_wire1_bv);
 	result    <= sub_wire0(13 DOWNTO 0);
 
@@ -101,7 +101,7 @@ END SYN;
 -- ============================================================
 -- Retrieval info: PRIVATE: AutoSizeResult NUMERIC "1"
 -- Retrieval info: PRIVATE: B_isConstant NUMERIC "1"
--- Retrieval info: PRIVATE: ConstantB NUMERIC "42"
+-- Retrieval info: PRIVATE: ConstantB NUMERIC "41"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
@@ -126,11 +126,11 @@ END SYN;
 -- Retrieval info: USED_PORT: dataa 0 0 7 0 INPUT NODEFVAL "dataa[6..0]"
 -- Retrieval info: USED_PORT: result 0 0 14 0 OUTPUT NODEFVAL "result[13..0]"
 -- Retrieval info: CONNECT: @dataa 0 0 7 0 dataa 0 0 7 0
--- Retrieval info: CONNECT: @datab 0 0 7 0 42 0 0 7 0
+-- Retrieval info: CONNECT: @datab 0 0 7 0 41 0 0 7 0
 -- Retrieval info: CONNECT: result 0 0 14 0 @result 0 0 14 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mult1.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mult1.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mult1.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mult1.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mult1.bsf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mult1_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for projeto3sd
-Tue Nov 20 01:38:20 2018
+Wed Nov 21 16:25:44 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -8,7 +8,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 ---------------------
   1. Legal Notice
   2. EDA Netlist Writer Summary
-  3. EDA Netlist Writer Messages
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
 
 
 
@@ -34,11 +36,46 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Nov 20 01:38:20 2018 ;
+; EDA Netlist Writer Status ; Successful - Wed Nov 21 16:25:44 2018 ;
 ; Revision Name             ; projeto3sd                            ;
 ; Top-level Entity Name     ; projeto3sd                            ;
 ; Family                    ; Cyclone II                            ;
+; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                           ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Option                                                                                            ; Setting                   ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
+; Generate netlist for functional simulation only                                                   ; Off                       ;
+; Time scale                                                                                        ; 1 ps                      ;
+; Truncate long hierarchy paths                                                                     ; Off                       ;
+; Map illegal HDL characters                                                                        ; Off                       ;
+; Flatten buses into individual nodes                                                               ; Off                       ;
+; Maintain hierarchy                                                                                ; Off                       ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
+; Enable glitch filtering                                                                           ; Off                       ;
+; Do not write top level VHDL entity                                                                ; Off                       ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
+; Architecture name in VHDL output netlist                                                          ; structure                 ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                       ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                       ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                   ;
++--------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                              ;
++--------------------------------------------------------------------------------------------------------------+
+; D:/OneDrive/Arquivos escolares/UFRN/SD/Unidade3/secador_graos_fpga/simulation/modelsim/projeto3sd.vo         ;
+; D:/OneDrive/Arquivos escolares/UFRN/SD/Unidade3/secador_graos_fpga/simulation/modelsim/projeto3sd_fast.vo    ;
+; D:/OneDrive/Arquivos escolares/UFRN/SD/Unidade3/secador_graos_fpga/simulation/modelsim/projeto3sd_v.sdo      ;
+; D:/OneDrive/Arquivos escolares/UFRN/SD/Unidade3/secador_graos_fpga/simulation/modelsim/projeto3sd_v_fast.sdo ;
++--------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -47,99 +84,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 20 01:38:19 2018
-Info: Command: quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog projeto3sd -c projeto3sd --vector_source="D:/OneDrive/Arquivos escolares/UFRN/SD/Unidade3/secador_graos_fpga/Waveform.vwf" --testbench_file=./simulation/qsim/projeto3sd.vt
-Warning (201007): Can't find port "ovf" in design
-Warning (201007): Can't find port "temp_out" in design
-Warning (201007): Can't find port "temp_out[7]" in design
-Warning (201007): Can't find port "temp_out[6]" in design
-Warning (201007): Can't find port "temp_out[5]" in design
-Warning (201007): Can't find port "temp_out[4]" in design
-Warning (201007): Can't find port "temp_out[3]" in design
-Warning (201007): Can't find port "temp_out[2]" in design
-Warning (201007): Can't find port "temp_out[1]" in design
-Warning (201007): Can't find port "temp_out[0]" in design
-Warning (201007): Can't find port "lum_out" in design
-Warning (201007): Can't find port "lum_out[7]" in design
-Warning (201007): Can't find port "lum_out[6]" in design
-Warning (201007): Can't find port "lum_out[5]" in design
-Warning (201007): Can't find port "lum_out[4]" in design
-Warning (201007): Can't find port "lum_out[3]" in design
-Warning (201007): Can't find port "lum_out[2]" in design
-Warning (201007): Can't find port "lum_out[1]" in design
-Warning (201007): Can't find port "lum_out[0]" in design
-Warning (201007): Can't find port "selData" in design
-Warning (201007): Can't find port "pwm_func" in design
-Warning (201007): Can't find port "pwm_func[12]" in design
-Warning (201007): Can't find port "pwm_func[11]" in design
-Warning (201007): Can't find port "pwm_func[10]" in design
-Warning (201007): Can't find port "pwm_func[9]" in design
-Warning (201007): Can't find port "pwm_func[8]" in design
-Warning (201007): Can't find port "pwm_func[7]" in design
-Warning (201007): Can't find port "pwm_func[6]" in design
-Warning (201007): Can't find port "pwm_func[5]" in design
-Warning (201007): Can't find port "pwm_func[4]" in design
-Warning (201007): Can't find port "pwm_func[3]" in design
-Warning (201007): Can't find port "pwm_func[2]" in design
-Warning (201007): Can't find port "pwm_func[1]" in design
-Warning (201007): Can't find port "pwm_func[0]" in design
-Warning (201007): Can't find port "en_wr" in design
-Warning (201007): Can't find port "pin_name1_teste" in design
-Warning (201007): Can't find port "enviar" in design
-Warning (201007): Can't find port "enviar[12]" in design
-Warning (201007): Can't find port "enviar[11]" in design
-Warning (201007): Can't find port "enviar[10]" in design
-Warning (201007): Can't find port "enviar[9]" in design
-Warning (201007): Can't find port "enviar[8]" in design
-Warning (201007): Can't find port "enviar[7]" in design
-Warning (201007): Can't find port "enviar[6]" in design
-Warning (201007): Can't find port "enviar[5]" in design
-Warning (201007): Can't find port "enviar[4]" in design
-Warning (201007): Can't find port "enviar[3]" in design
-Warning (201007): Can't find port "enviar[2]" in design
-Warning (201007): Can't find port "enviar[1]" in design
-Warning (201007): Can't find port "enviar[0]" in design
-Warning (201007): Can't find port "fim" in design
-Warning (201007): Can't find port "saida" in design
-Warning (201007): Can't find port "saida[11]" in design
-Warning (201007): Can't find port "saida[10]" in design
-Warning (201007): Can't find port "saida[9]" in design
-Warning (201007): Can't find port "saida[8]" in design
-Warning (201007): Can't find port "saida[7]" in design
-Warning (201007): Can't find port "saida[6]" in design
-Warning (201007): Can't find port "saida[5]" in design
-Warning (201007): Can't find port "saida[4]" in design
-Warning (201007): Can't find port "saida[3]" in design
-Warning (201007): Can't find port "saida[2]" in design
-Warning (201007): Can't find port "saida[1]" in design
-Warning (201007): Can't find port "saida[0]" in design
-Warning (201007): Can't find port "resultado" in design
-Warning (201007): Can't find port "resultado[12]" in design
-Warning (201007): Can't find port "resultado[11]" in design
-Warning (201007): Can't find port "resultado[10]" in design
-Warning (201007): Can't find port "resultado[9]" in design
-Warning (201007): Can't find port "resultado[8]" in design
-Warning (201007): Can't find port "resultado[7]" in design
-Warning (201007): Can't find port "resultado[6]" in design
-Warning (201007): Can't find port "resultado[5]" in design
-Warning (201007): Can't find port "resultado[4]" in design
-Warning (201007): Can't find port "resultado[3]" in design
-Warning (201007): Can't find port "resultado[2]" in design
-Warning (201007): Can't find port "resultado[1]" in design
-Warning (201007): Can't find port "resultado[0]" in design
-Warning (201007): Can't find port "ROM_Address" in design
-Warning (201007): Can't find port "ROM_Address[6]" in design
-Warning (201007): Can't find port "ROM_Address[5]" in design
-Warning (201007): Can't find port "ROM_Address[4]" in design
-Warning (201007): Can't find port "ROM_Address[3]" in design
-Warning (201007): Can't find port "ROM_Address[2]" in design
-Warning (201007): Can't find port "ROM_Address[1]" in design
-Warning (201007): Can't find port "ROM_Address[0]" in design
-Warning (201007): Can't find port "clkTEMP" in design
-Info (201000): Generated Verilog Test Bench File ./simulation/qsim/projeto3sd.vt for simulation
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 87 warnings
-    Info: Peak virtual memory: 4536 megabytes
-    Info: Processing ended: Tue Nov 20 01:38:20 2018
+    Info: Processing started: Wed Nov 21 16:25:43 2018
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off projeto3sd -c projeto3sd
+Info (204026): Generated files "projeto3sd.vo", "projeto3sd_fast.vo", "projeto3sd_v.sdo" and "projeto3sd_v_fast.sdo" in directory "D:/OneDrive/Arquivos escolares/UFRN/SD/Unidade3/secador_graos_fpga/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4539 megabytes
+    Info: Processing ended: Wed Nov 21 16:25:44 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
